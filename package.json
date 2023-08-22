@@ -1,11 +1,11 @@
 {
-  "name": "mr-joe",
+  "name": "blog-team-be",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn --transpile-only ./src/index.ts"
+    "start": "ts-node-dev --respawn --transpile-only index.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +13,13 @@
   "dependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
+    "@types/mongoose": "^5.11.97",
+    "cloudinary": "^1.40.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.4.4",
+    "multer": "^1.4.5-lts.1",
     "node": "^20.3.1"
   }
 }
