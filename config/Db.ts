@@ -2,11 +2,9 @@ import mongoose from "mongoose";
 import env from "dotenv";
 env.config();
 
-const db_URL: string = process.env.DB_STRING!;
-
 export const db = () => {
   try {
-    mongoose.connect(db_URL).then(() => {
+    mongoose.connect(process.env.DB_STRING!).then(() => {
       console.log("DB connected💥🛩🛩");
     });
   } catch (error) {
